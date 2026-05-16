@@ -1,0 +1,38 @@
+name: CI - Production
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-build:
+    name: Lint, Build & Verify (Production)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Run HTML Linting
+        run: htmlhint "*.html"
+
+      - name: Build Docker image
+        run: docker build -t cs-dept-website:prod .
+
+      - name: Test production container
+        run: |
+          docker run -d -p 8080:80 --name test-prod cs-dept-website:prod
+          sleep 5
+          curl -f http://localhost:8080 || exit 1
+          docker stop test-prod
+          echo "Production image build verified!"
