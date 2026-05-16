@@ -6,12 +6,11 @@ on:
 
 jobs:
   deploy-production:
-    name: Deploy to Render (Production)
+    name: Deploy to Netlify (Production)
     runs-on: ubuntu-latest
     environment: production
-
     steps:
-      - name: Trigger Render Deploy (Production)
+      - name: Trigger Netlify Build (Production)
         run: |
           curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_PROD }}"
           echo "Production deployment triggered!"

@@ -6,12 +6,11 @@ on:
 
 jobs:
   deploy-development:
-    name: Deploy to Render (Development)
+    name: Deploy to Netlify (Development)
     runs-on: ubuntu-latest
     environment: development
-
     steps:
-      - name: Trigger Render Deploy (Development)
+      - name: Trigger Netlify Build (Development)
         run: |
           curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_DEV }}"
           echo "Development deployment triggered!"
