@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty - CS Department COMSATS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .faculty-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1200px; margin: 0 auto; }
+        .faculty-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .faculty-card:hover { transform: translateY(-5px); }
+        .faculty-card-header { background: linear-gradient(135deg, #1a3c6e, #2d6a9f); padding: 25px; text-align: center; color: white; }
+        .faculty-avatar { width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; margin: 0 auto 15px; }
+        .faculty-card-header h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .faculty-card-header .designation { font-size: 0.85rem; color: #f0a500; }
+        .faculty-card-body { padding: 20px; }
+        .faculty-info { list-style: none; }
+        .faculty-info li { padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.9rem; color: #555; }
+        .faculty-info li strong { color: #1a3c6e; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">CUI <span>CS Dept</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html" class="active">Faculty</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Our Faculty</h1>
+        <p>Meet the experienced and dedicated faculty of the CS Department</p>
+    </div>
+
+    <section>
+        <div class="section-title"><h2>Faculty Directory</h2><div class="underline"></div></div>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <div class="faculty-card-header"><div class="faculty-avatar">👨‍🏫</div><h3>Dr. Ahmed Raza</h3><div class="designation">Professor & HOD</div></div>
+                <div class="faculty-card-body"><ul class="faculty-info"><li><strong>Specialization:</strong> Artificial Intelligence</li><li><strong>Qualification:</strong> PhD (University of Manchester)</li><li><strong>Office Hours:</strong> Mon-Wed 10am–12pm</li><li><strong>Email:</strong> ahmed.raza@comsats.edu.pk</li></ul></div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-card-header"><div class="faculty-avatar">👩‍🏫</div><h3>Dr. Sana Malik</h3><div class="designation">Associate Professor</div></div>
+                <div class="faculty-card-body"><ul class="faculty-info"><li><strong>Specialization:</strong> Machine Learning & Data Science</li><li><strong>Qualification:</strong> PhD (NUST)</li><li><strong>Office Hours:</strong> Tue-Thu 2pm–4pm</li><li><strong>Email:</strong> sana.malik@comsats.edu.pk</li></ul></div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-card-header"><div class="faculty-avatar">👨‍💻</div><h3>Dr. Usman Tariq</h3><div class="designation">Associate Professor</div></div>
+                <div class="faculty-card-body"><ul class="faculty-info"><li><strong>Specialization:</strong> Cybersecurity & Networks</li><li><strong>Qualification:</strong> PhD (KTH Sweden)</li><li><strong>Office Hours:</strong> Mon-Fri 11am–12pm</li><li><strong>Email:</strong> usman.tariq@comsats.edu.pk</li></ul></div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-card-header"><div class="faculty-avatar">👩‍💻</div><h3>Ms. Hira Baig</h3><div class="designation">Assistant Professor</div></div>
+                <div class="faculty-card-body"><ul class="faculty-info"><li><strong>Specialization:</strong> Web Technologies & DevOps</li><li><strong>Qualification:</strong> MS (COMSATS)</li><li><strong>Office Hours:</strong> Wed-Fri 9am–11am</li><li><strong>Email:</strong> hira.baig@comsats.edu.pk</li></ul></div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-card-header"><div class="faculty-avatar">👨‍🔬</div><h3>Mr. Khizar Hayat</h3><div class="designation">Lecturer</div></div>
+                <div class="faculty-card-body"><ul class="faculty-info"><li><strong>Specialization:</strong> Cloud Computing & DevOps</li><li><strong>Qualification:</strong> MS (FAST-NUCES)</li><li><strong>Office Hours:</strong> Tue-Thu 10am–12pm</li><li><strong>Email:</strong> khizar.hayat@comsats.edu.pk</li></ul></div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-card-header"><div class="faculty-avatar">👩‍🔬</div><h3>Ms. Zara Qadir</h3><div class="designation">Lecturer</div></div>
+                <div class="faculty-card-body"><ul class="faculty-info"><li><strong>Specialization:</strong> Database Systems & OOP</li><li><strong>Qualification:</strong> MS (University of Lahore)</li><li><strong>Office Hours:</strong> Mon-Wed 1pm–3pm</li><li><strong>Email:</strong> zara.qadir@comsats.edu.pk</li></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li><li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li><li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2025 Department of Computer Science, COMSATS University Islamabad, Lahore Campus.</p>
+    </footer>
+</body>
+</html>

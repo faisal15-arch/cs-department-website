@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - CS Department COMSATS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .courses-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .courses-table th { background-color: #1a3c6e; color: white; padding: 12px 15px; text-align: left; }
+        .courses-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+        .courses-table tr:hover { background-color: #f0f5ff; }
+        .semester-block { max-width: 1100px; margin: 0 auto 40px; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 15px rgba(0,0,0,0.08); }
+        .semester-block h3 { background: #2d6a9f; color: white; padding: 15px 20px; margin: 0; }
+        .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+        .badge-core { background: #e8f0fe; color: #1a3c6e; }
+        .badge-elective { background: #fff3cd; color: #856404; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">CUI <span>CS Dept</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-header">
+        <h1>Course Offerings</h1>
+        <p>Bachelor of Science in Computer Science — 4-Year Program (8 Semesters)</p>
+    </div>
+
+    <section>
+        <div class="section-title">
+            <h2>BSCS Curriculum</h2>
+            <p>A comprehensive curriculum designed to build strong foundations in computing</p>
+            <div class="underline"></div>
+        </div>
+
+        <div class="semester-block">
+            <h3>📚 Semester 1 & 2 — Foundation</h3>
+            <table class="courses-table">
+                <thead><tr><th>Code</th><th>Course Title</th><th>Credit Hours</th><th>Type</th></tr></thead>
+                <tbody>
+                    <tr><td>CS-101</td><td>Introduction to Computing</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-102</td><td>Programming Fundamentals</td><td>4</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>MTH-101</td><td>Calculus and Analytical Geometry</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>ENG-101</td><td>English Composition</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-201</td><td>Object Oriented Programming</td><td>4</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-202</td><td>Discrete Structures</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="semester-block">
+            <h3>📚 Semester 3 & 4 — Core Development</h3>
+            <table class="courses-table">
+                <thead><tr><th>Code</th><th>Course Title</th><th>Credit Hours</th><th>Type</th></tr></thead>
+                <tbody>
+                    <tr><td>CS-301</td><td>Data Structures and Algorithms</td><td>4</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-302</td><td>Database Systems</td><td>4</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-303</td><td>Computer Organization & Architecture</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-401</td><td>Operating Systems</td><td>4</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-402</td><td>Software Engineering</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-403</td><td>Computer Networks</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="semester-block">
+            <h3>📚 Semester 5 & 6 — Advanced Topics</h3>
+            <table class="courses-table">
+                <thead><tr><th>Code</th><th>Course Title</th><th>Credit Hours</th><th>Type</th></tr></thead>
+                <tbody>
+                    <tr><td>CS-501</td><td>Artificial Intelligence</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-502</td><td>Web Technologies</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-503</td><td>Theory of Automata</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-601</td><td>Machine Learning</td><td>3</td><td><span class="badge badge-elective">Elective</span></td></tr>
+                    <tr><td>CS-602</td><td>DevOps for Cloud Computing</td><td>3</td><td><span class="badge badge-elective">Elective</span></td></tr>
+                    <tr><td>CS-603</td><td>Cybersecurity Fundamentals</td><td>3</td><td><span class="badge badge-elective">Elective</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="semester-block">
+            <h3>📚 Semester 7 & 8 — Capstone</h3>
+            <table class="courses-table">
+                <thead><tr><th>Code</th><th>Course Title</th><th>Credit Hours</th><th>Type</th></tr></thead>
+                <tbody>
+                    <tr><td>CS-701</td><td>Final Year Project I</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-702</td><td>Professional Practices & Ethics</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-801</td><td>Final Year Project II</td><td>3</td><td><span class="badge badge-core">Core</span></td></tr>
+                    <tr><td>CS-802</td><td>Distributed Systems</td><td>3</td><td><span class="badge badge-elective">Elective</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li><li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li><li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2025 Department of Computer Science, COMSATS University Islamabad, Lahore Campus.</p>
+    </footer>
+</body>
+</html>
